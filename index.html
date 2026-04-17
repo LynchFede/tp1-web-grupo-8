@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TP1 Web Grupo 8</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Grupo 8</h1>
+    <p>Trabajo práctico grupal realizado con HTML, CSS y JavaScript.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Integrantes</h2>
+      <ul>
+        <li><a href="integrante1.html">Federico Lynch</a></li>
+        <li><a href="integrante2.html">Gilda Morgante</a></li>
+        <li><a href="integrante3.html">Nahuel Rodríguez</a></li>
+        <li><a href="integrante4.html">David Egert</a></li>
+        <li><a href="integrante5.html">María Cristina Roma</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Bienvenida</h3>
+      <button onclick="mostrarBienvenida()">Hacé clic</button>
+      <p id="mensaje-index"></p>
+    </section>
+  </main>
+
+  <script>
+    function mostrarBienvenida() {
+      document.getElementById("mensaje-index").innerText = "Bienvenidos a la portada del Grupo 8 👋";
+    }
+  </script>
+
+</body>
+</html>

@@ -65,3 +65,75 @@ button:hover {
 .avatar:hover {
   transform: scale(1.1);
 }
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Celulares pequeños */
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  main {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 401px) and (max-width: 900px) {
+  body {
+    padding: 15px;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+  main {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
