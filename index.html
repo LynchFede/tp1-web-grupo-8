@@ -8,34 +8,99 @@
 <body>
 
   <header>
-    <h1>Grupo 8</h1>
-    <p>Trabajo práctico grupal realizado con HTML, CSS y JavaScript.</p>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="integrante1.html">Federico</a></li>
+      <li><a href="integrante2.html">Gilda</a></li>
+      <li><a href="integrante3.html">Nahuel</a></li>
+      <li><a href="integrante4.html">David</a></li>
+      <li><a href="integrante5.html">María Cristina</a></li>
+    </ul>
+  </nav>
+
   </header>
 
   <main>
-    <section>
-      <h2>Integrantes</h2>
-      <ul>
+    
+
+  <main class="portada">
+  <section class="presentacion">
+    <h1>Grupo 8</h1>
+    <p>Trabajo práctico grupal realizado con HTML, CSS y JavaScript.</p>
+    
+  </section>
+ <!-- otras secciones -->
+    
+
+</main>
+      <!--<ul>
         <li><a href="integrante1.html">Federico Lynch</a></li>
         <li><a href="integrante2.html">Gilda Morgante</a></li>
         <li><a href="integrante3.html">Nahuel Rodríguez</a></li>
         <li><a href="integrante4.html">David Egert</a></li>
         <li><a href="integrante5.html">María Cristina Roma</a></li>
-      </ul>
+      </ul>-->
     </section>
 
+
+
     <section>
-      <h3>Bienvenida</h3>
-      <button onclick="mostrarBienvenida()">Hacé clic</button>
+      <h3>Integrantes</h3>
+      <button id="btn-luz" onclick="toggleTarjetas()">
+    Apagar la luz
+      </button>
+      <!--<button onclick="mostrarBienvenida()">Hacé clic</button>-->
       <p id="mensaje-index"></p>
+
+<section class="contenedor-tarjetas">
+  <div class="tarjeta">
+  <img src="img/avatar_fede.png" alt="Federico Lynch" class="avatar-card">
+  <h3>Federico Lynch</h3>
+  <p>Desarrollador Frontend</p>
+  <a href="integrante1.html" class="boton">Ver perfil</a>
+</div>
+
+<div class="tarjeta">
+  <img src="" alt="Gilda" class="avatar-card">
+  <h3>Gilda Morgante</h3>
+  <p>Desarrollador Frontend</p>
+  <a href="integrante2.html" class="boton">Ver perfil</a>
+</div>
+
+  <div class="tarjeta">
+  <img src="" alt="Nahuel" class="avatar-card">
+  <h3>Nahuel Rodríguez</h3>
+  <p>Desarrollador Frontend</p>
+  <a href="integrante3.html" class="boton">Ver perfil</a>
+</div>
+
+<div class="tarjeta">
+  <img src="/img/avatar_david.png" alt="David" class="avatar-card">
+  <h3>David Egert</h3>
+  <p>Desarrollador Frontend</p>
+  <a href="integrante4.html" class="boton">Ver perfil</a>
+</div>
+
+ <div class="tarjeta">
+  <img src="" alt="María Cristina" class="avatar-card">
+  <h3>María Cristina Roma</h3>
+  <p>Desarrollador Frontend</p>
+  <a href="integrante5.html" class="boton">Ver perfil</a>
+</div>
+</section>
+
+
     </section>
   </main>
 
-  <script>
+  <script src="/js/script.js"></script>
+  <!--<script>
     function mostrarBienvenida() {
-      document.getElementById("mensaje-index").innerText = "Bienvenidos a la portada del Grupo 8 👋";
+      document.getElementById("mensaje-index").innerText = "Bienvenidos a la portada del Grupo 8";
     }
-  </script>
+  </script>-->
 
 </body>
+
 </html>
