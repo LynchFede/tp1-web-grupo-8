@@ -13,8 +13,8 @@ function toggleTarjetas() {
   const boton = document.getElementById("btn-luz");
 
   if (document.body.classList.contains("modo-tarjetas")) {
-    boton.innerText = "Encender la luz";
+    boton.innerText = "Modo claro";
   } else {
-    boton.innerText = "Apagar la luz";
+    boton.innerText = "Modo oscuro";
   }
 }

@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   margin: 0;
   padding: 20px;
@@ -232,6 +232,23 @@ button:hover {
   text-align: center;
 }
 
+/* ===============================
+   PERFIL GILDA (Personalización)
+================================ */
+
+.perfil-principal h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-family: "Google Sans Flex"- sans-serif;
+  font-weight: bold;
+
+} 
+
+.perfil-principal p {
+  text-align: center;
+}
 
 
 
