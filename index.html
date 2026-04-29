@@ -1,105 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
 
+<head>
   <meta charset="UTF-8">
   <title>TP1 Web Grupo 8</title>
 
   <!-- FUENTE -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-  <header>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="integrante1.html">Federico</a></li>
-      <li><a href="integrante2.html">Gilda</a></li>
-      <li><a href="integrante3.html">Nahuel</a></li>
-      <li><a href="integrante4.html">David</a></li>
-      <li><a href="integrante5.html">María Cristina</a></li>
-    </ul>
-  </nav>
-
-  </header>
+  <div id="header"></div>
 
   <main>
-    
 
-  <main class="portada">
-  <section class="presentacion">
-    <h1>Grupo 8 Frontend </h1>
-    <p>Una presentación breve del equipo, describiendo su propósito o enfoque del proyecto.</p>
-    
-  </section>
- <!-- otras secciones -->
-    
-
-</main>
-      <!--<ul>
-        <li><a href="integrante1.html">Federico Lynch</a></li>
-        <li><a href="integrante2.html">Gilda Morgante</a></li>
-        <li><a href="integrante3.html">Nahuel Rodríguez</a></li>
-        <li><a href="integrante4.html">David Egert</a></li>
-        <li><a href="integrante5.html">María Cristina Roma</a></li>
-      </ul>-->
+    <!-- PORTADA -->
+    <section class="portada">
+      <section class="presentacion">
+        <h1>Grupo 8 Frontend </h1>
+        <p>Una presentación breve del equipo, describiendo su propósito o enfoque del proyecto.</p>
+      </section>
     </section>
 
-
-
+    <!-- INTEGRANTES -->
     <section>
       <h3>Integrantes</h3>
       <button id="btn-luz" onclick="toggleTarjetas()">
-    Apagar la luz
+        Modo oscuro
       </button>
       <!--<button onclick="mostrarBienvenida()">Hacé clic</button>-->
       <p id="mensaje-index"></p>
 
-<section class="contenedor-tarjetas">
-  <div class="tarjeta">
-  <img src="img/avatar_fede.png" alt="Federico Lynch" class="avatar-card">
-  <h3>Federico Lynch</h3>
-  <p>Desarrollador Frontend</p>
-  <a href="integrante1.html" class="boton">Ver perfil</a>
-</div>
-
-<div class="tarjeta">
-  <img src="img/avatar_Gilda.jpg" alt="Gilda" class="avatar-card">
-  <h3>Gilda Morgante</h3>
-  <p>Desarrollador Frontend</p>
-  <a href="integrante2.html" class="boton">Ver perfil</a>
-</div>
-
-  <div class="tarjeta">
-  <img src="IMG/avatar_nahuel.jpg" alt="Nahuel" class="avatar-card">
-  <h3>Nahuel Rodríguez</h3>
-  <p>Desarrollador Frontend</p>
-  <a href="integrante3.html" class="boton">Ver perfil</a>
-</div>
-
-<div class="tarjeta">
-  <img src="/img/avatar_david.png" alt="David" class="avatar-card">
-  <h3>David Egert</h3>
-  <p>Desarrollador Frontend</p>
-  <a href="integrante4.html" class="boton">Ver perfil</a>
-</div>
-
- <div class="tarjeta">
-  <img src="" alt="María Cristina" class="avatar-card">
-  <h3>María Cristina Roma</h3>
-  <p>Desarrollador Frontend</p>
-  <a href="integrante5.html" class="boton">Ver perfil</a>
-</div>
-</section>
-
-
+      <section class="contenedor-tarjetas" id="contenedor-tarjetas">
+      </section>
     </section>
   </main>
+
+  <div id="footer"></div>
 
   <script src="/js/script.js"></script>
   <!--<script>
@@ -109,5 +53,4 @@
   </script>-->
 
 </body>
-
 </html>
