@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Gilda Morgante - grupo 8</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -12,10 +16,10 @@
 
 <div id="header"></div>
 
-<main class="perfil">
+<main class="perfil-gilda">
 
   <!-- PRESENTACIÓN -->
- <section class="perfil-principal">
+ <section class="perfil-gilda">
   
   <h2>Gilda Morgante</h2>
 
@@ -66,9 +70,14 @@
 
   <!-- INTERACCIÓN JS OBLIGATORIA -->
   <section class="interaccion">
-    <button onclick="showMoreGilda()">Contacto</button>
-    <p id="contactoGilda"></p>
-  </section>
+    <button onclick="toggleContacto()" id="btn-contacto">
+     Ver contacto
+     </button>
+      <div id="info-contacto" class="oculto">
+        <p><strong>Teléfono:</strong> +54 9 341 5846415</p>
+        <p><strong>Email:</strong> morgantegilda@gmail.com</p>
+      </div>
+    </section>
 
 </main>
 

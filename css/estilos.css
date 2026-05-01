@@ -32,7 +32,7 @@ header {
 }
 
 .menu a:hover {
-  color: #ffd369;
+  color: #A3B087;
    transform: scale(1.1 );
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .presentacion h2 {
-  color: #1c92d2;
+  color: #000000;
   font-weight: 600;
 }
 
@@ -116,7 +116,7 @@ header {
   border-radius: 50%;
   margin: 0 auto 15px auto;
   display: block;
-  border: 4px solid #1c92d2;
+  border: 4px solid #000507;
   transition: transform 0.3s ease;
 }
 
@@ -140,7 +140,7 @@ header {
 }
 
 .boton:hover {
-  background: #2c5364;
+  background:#203a43;
 }
 
 
@@ -165,7 +165,7 @@ header {
 main {
   max-width: 600px;
   margin: auto;
-  background: #fff3b0;
+  background: #A3B087;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
@@ -184,39 +184,45 @@ main.perfil.visible {
 }
 
 h1 {
-  color: #3313e7; /* claro para el fondo azul */
+  color: #313647; /* claro para el fondo azul */
+
 }
 
 h2, h3 {
   color: #222; /* gris oscuro casi negro */
+  font-family: "Google Sans Flex", sans-serif;
+
 }
 
 button {
-  background-color: #007bff;
+  background-color: #203a43;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Google Sans Flex", sans-serif;
 }
 section p {
   margin-top: 10px;
   color: #555;
   font-size: 14px;
+  font-family: "Google Sans Flex", sans-serif;
 }
 h2 {
   text-align: center;
 }
 
 h3 {
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #435663;
   padding-bottom: 5px;
+  font-family: "Google Sans Flex", sans-serif;
 }
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 button:hover {
-  background-color: #0056b3;
+  background-color: #435663;
 }
 .avatar {
   width: 150px;
@@ -225,7 +231,7 @@ button:hover {
   border-radius: 50%;
   display: block;
   margin: 0 auto 20px auto;
-  border: 4px solid #007bff;
+  border: 4px solid #435663;
   transition: 0.3s;
 }
 
@@ -258,17 +264,17 @@ footer {
    PERFIL GILDA (Personalización)
 ================================ */
 
-.perfil-principal h2 {
+.perfil-gilda h2 {
   text-align: center;
   margin-bottom: 15px;
   font-size: 28px;
   letter-spacing: 1px;
-  font-family: "Google Sans Flex"- sans-serif;
+  font-family: "Google Sans Flex",sans-serif;
   font-weight: bold;
 
 } 
 
-.perfil-principal p {
+.perfil-gilda p {
   text-align: center;
 }
 
