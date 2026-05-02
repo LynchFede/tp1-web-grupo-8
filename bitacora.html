@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitácora - Grupo 8</title>
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="perfil">
+
+    <section class="perfil-principal">
+    <h2>Bitácora de Desarrollo</h2>
+    <p>En esta sección se describe el proceso de desarrollo del proyecto, las decisiones tomadas por el equipo y la evolución del trabajo a lo largo de la implementación.</p>
+    </section>
+
+    <section>
+    <h3>Decisiones de diseño</h3>
+    <p>
+        Desde el inicio se decidió implementar un diseño simple, claro y reutilizable. 
+        Se optó por una estructura modular utilizando componentes HTML para el header y el footer, 
+        lo que permitió mantener consistencia en todas las páginas.
+    </p>
+    <p>
+        Además, se trabajó con un diseño centrado, utilizando tarjetas para representar a cada integrante, 
+        priorizando la claridad visual y la organización del contenido.
+    </p>
+    <p>
+        Se incorporó también un modo oscuro para mejorar la experiencia del usuario y permitir una interacción más dinámica.
+    </p>
+    </section>
+
+    <section>
+    <h3>Dificultades encontradas</h3>
+    <p>
+        Una de las principales dificultades fue la reutilización de componentes entre distintas páginas, 
+        especialmente al trabajar con la carga dinámica del header y footer mediante JavaScript.
+    </p>
+    <p>
+        También se presentaron inconvenientes al manejar la ejecución del código en distintas páginas, 
+        ya que algunas funciones se ejecutaban en contextos donde los elementos no existían en el DOM.
+    </p>
+    <p>
+        Otro desafío fue la implementación del modo oscuro de manera global, asegurando que afecte a todos los elementos del sitio y se mantenga al navegar entre páginas.
+    </p>
+    </section>
+
+    <section>
+    <h3>Resolución de problemas</h3>
+    <p>
+        Para resolver estos inconvenientes, se incorporaron validaciones en JavaScript que verifican la existencia de los elementos antes de ejecutar funciones específicas.
+    </p>
+    <p>
+        Se utilizó <strong>localStorage</strong> para persistir el estado del modo oscuro, logrando que la preferencia del usuario se mantenga entre recargas y navegación.
+    </p>
+    <p>
+        Además, se reorganizó el código para mejorar su modularidad y reutilización, facilitando el mantenimiento del proyecto.
+    </p>
+    </section>
+
+    <section>
+    <h3>Cambios importantes</h3>
+    <ul>
+        <li>Implementación de tarjetas dinámicas generadas con JavaScript.</li>
+        <li>Incorporación de animaciones para mejorar la experiencia visual.</li>
+        <li>Modularización del header y footer mediante carga dinámica.</li>
+        <li>Implementación del modo oscuro persistente.</li>
+        <li>Mejora en la organización del CSS y adaptación responsive.</li>
+    </ul>
+    </section>
+ 
+    <section>
+    <h3>Reflexión y evolución</h3>
+    <p>
+        Este proyecto permitió aplicar conceptos fundamentales del desarrollo frontend, como la separación de responsabilidades, 
+        la reutilización de componentes y la mejora progresiva de la interfaz.
+    </p>
+    <p>
+        De cara al TP2, se espera continuar mejorando la estructura del código, incorporar nuevas funcionalidades y profundizar en la experiencia del usuario, 
+        manteniendo una evolución constante del proyecto.
+    </p>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

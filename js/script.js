@@ -11,7 +11,7 @@ const integrantes = [
     img: "img/avatar_Gilda.jpg",
     link: "integrante2.html"
   },
-  {
+  { 
     nombre: "Nahuel Rodríguez",
     rol: "Desarrollador Frontend",
     img: "img/avatar_nahuel.jpg",
@@ -36,8 +36,24 @@ function cargarComponente(id, archivo) {
     .then(response => response.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
+
+      if (id === "header") {
+        actualizarBotonModo();
+      }
     })
     .catch(error => console.error("Error cargando componente:", error));
+}
+
+function actualizarBotonModo() {
+  const boton = document.getElementById("btn-luz");
+
+  if (!boton) return;
+
+  const modoActivo = document.body.classList.contains("modo-tarjetas");
+
+  boton.innerText = modoActivo
+    ? "☀️ Modo claro"
+    : "🌙 Modo oscuro";
 }
 
 function generarTarjetas() {
@@ -77,6 +93,20 @@ document.addEventListener("DOMContentLoaded", function () {
       perfil.classList.add("visible");
     }, 100);
   }
+
+  const modoGuardado = localStorage.getItem("modoOscuro");
+
+  if (modoGuardado === "true") {
+    document.body.classList.add("modo-tarjetas");
+
+    const boton = document.getElementById("btn-luz");
+
+    if (boton) {
+      boton.innerText = document.body.classList.contains("modo-tarjetas")
+        ? "☀️ Modo claro"
+        : "🌙 Modo oscuro";
+    }
+  }
 });
 
 
@@ -108,10 +138,13 @@ function toggleTarjetas() {
   document.body.classList.toggle("modo-tarjetas");
 
   const boton = document.getElementById("btn-luz");
+  const modoActivo = document.body.classList.contains("modo-tarjetas");
 
-  if (document.body.classList.contains("modo-tarjetas")) {
-    boton.innerText = "Modo claro";
-  } else {
-    boton.innerText = "Modo oscuro";
-  }
+  boton.innerText = modoActivo
+    ? "☀️ Modo claro"
+    : "🌙 Modo oscuro";
+
+  localStorage.setItem("modoOscuro", modoActivo);
+
+  actualizarBotonModo();
 }

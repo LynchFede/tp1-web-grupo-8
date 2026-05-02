@@ -78,9 +78,6 @@ header {
 }
 
 
-
-
-
 /* ===== TARJETAS ===== */
 
 .contenedor-tarjetas {
@@ -144,22 +141,68 @@ header {
 }
 
 
-
 /* =========================
-   MODO TARJETAS OSCURO
+   MODO OSCURO GLOBAL
 ========================= */
+.nav-principal {
+  position: relative;
+}
+
+#btn-luz {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#btn-luz:hover {
+  background-color: #435663;
+}
+
+.modo-tarjetas {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.modo-tarjetas main {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.modo-tarjetas h1,
+.modo-tarjetas h2,
+.modo-tarjetas h3 {
+  color: #ffffff;
+}
+
+.modo-tarjetas p {
+  color: #cccccc;
+}
+
+.modo-tarjetas header {
+  background: transparent;
+}
+
+.modo-tarjetas .boton {
+  background: #333;
+}
+
+.modo-tarjetas .boton:hover {
+  background: #555;
+}
 
 .modo-tarjetas .tarjeta {
-
-  background: rgba(20, 20, 20, 0.85);
+  background: #2a2a2a;
   color: #ffffff;
-  box-shadow: 0 0 25px rgba(28, 146, 210, 0.6);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
 }
 
-.modo-tarjetas .tarjeta h3 {
-  color: #1c92d2;
+.titulo-integrantes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
-
 
 /*--------------------------------------------------------------------------------------------*/
 main {
