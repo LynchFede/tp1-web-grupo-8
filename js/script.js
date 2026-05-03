@@ -7,7 +7,7 @@ const integrantes = [
   },
   {
     nombre: "Gilda Morgante",
-    rol: "Desarrollador Frontend",
+    rol: "Desarrolladora Frontend",
     img: "img/avatar_Gilda.jpg",
     link: "integrante2.html"
   },
@@ -114,11 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //document.getElementById("mensaje").innerText = "Gracias por visitar mi perfil 👋";
 //}
 
-function showMoreGilda() {
-  document.getElementById("contactoGilda").innerHTML = "Contacto: +3415846415";
-}
 
-// función para mostrar/ocultar información de contacto en integrante5.html
+// función para mostrar/ocultar información de contacto 
 function toggleContacto() {
   const info = document.getElementById("info-contacto");
   const boton = document.getElementById("btn-contacto");

@@ -307,7 +307,7 @@ footer {
    PERFIL GILDA (Personalización)
 ================================ */
 
-.perfil-gilda h2 {
+.perfil-principal h2 {
   text-align: center;
   margin-bottom: 15px;
   font-size: 28px;
@@ -317,7 +317,7 @@ footer {
 
 } 
 
-.perfil-gilda p {
+.perfil-principal p {
   text-align: center;
 }
 

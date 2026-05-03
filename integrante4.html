@@ -68,13 +68,19 @@
     </ul>
   </section>
 
-  <!-- INTERACCIÓN JS OBLIGATORIA -->
-  <section class="interaccion">
-    <button onclick="mostrarMensajeDavid()">Descubrir más</button>
-    <p id="mensaje-david"></p>
-  </section>
+    <!-- INTERACCIÓN JS (obligatoria) -->
+   <section class="interaccion">
+    <button onclick="toggleContacto()" id="btn-contacto">
+     Ver contacto
+     </button>
 
-</main>
+      <div id="info-contacto" class="oculto">
+        <p><strong>Teléfono:</strong> +54 9 XXXXXXXXX</p>
+        <p><strong>Email:</strong> Degert@gmail.com</p>
+      </div>
+    </section>
+
+  </main>
 
 <div id="footer"></div>
 

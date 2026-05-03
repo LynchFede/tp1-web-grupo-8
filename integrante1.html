@@ -57,9 +57,14 @@
     </section>
 
     <!-- INTERACCIÓN JS (obligatoria) -->
-    <section>
-      <button onclick="mostrarMensaje()">Hacé clic</button>
-      <p id="mensaje"></p>
+   <section class="interaccion">
+    <button onclick="toggleContacto()" id="btn-contacto">
+     Ver contacto
+     </button>
+      <div id="info-contacto" class="oculto">
+        <p><strong>Teléfono:</strong> +54 9 XXXXXXXXX</p>
+        <p><strong>Email:</strong> Flynch@gmail.com</p>
+      </div>
     </section>
 
   </main>
