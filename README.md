@@ -72,10 +72,10 @@ Al hacer clic en el botón #btn-luz, alterna la clase modo-tarjetas en el body, 
 Funciones dinámicas en páginas individuales:
 
 -Animación de entrada del perfil
-Al cargar la página, si existe un <main class="perfil">, se le agrega la clase visible con un delay de 100ms, disparando una transición CSS de opacity y translateY que hace que el contenido aparezca suavemente.
+Al cargar la página, si existe un <main class="perfil">, se le agrega la clase visible con un delay de 100ms, disparando una transición CSS de opacity y translateY que hace que el contenido aparezca suavemente. 
 
 - toggleContacto()  
-Al hacer clic en el botón #btn-contacto, muestra u oculta la sección #info-contacto alternando la clase activo, y cambia el texto del botón entre "Ver contacto" y "Ocultar contacto".
+Al hacer clic en el botón #btn-contacto, muestra u oculta la sección #info-contacto alternando la clase activo, y cambia el texto del botón entre "Ver contacto" y "Ocultar contacto". (ref 4) img\Capturas\Ref 4.jpg
 
 - Restauración del modo oscuro
 Al cargar cualquier página, se lee localStorage para ver si el modo oscuro estaba activo, y si es así se aplica automáticamente sin que el usuario tenga que volver a activarlo.
