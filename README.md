@@ -32,8 +32,50 @@ El proyecto está organizado de la siguiente manera:
 ## Repositorio
 https://github.com/LynchFede/tp1-web-grupo-8
 
-## Guía de Estilos
 
--Paleta de colores utilizadas:
+## Guía de Estilos
+-Paleta de colores utilizadas: 
 - Se tomó como referencia la siguiente combinación: https://colorhunt.co/palette/313647435663a3b087fff8d4
--Tipografías utilizadas: "Google Sans Flex"
+Listado de códigos:
+-Backround principal #0f2027, #203a43, #2c5364 (fondo principal) y #A3B087 (para contenedor de tarjetas)
+-Para botones: Backround: #203a43 Efecto  Hover en botones: #435663
+-Textos y superficies: 
+    Tarjeta txt : #333 
+    Párrafos: #555
+    h1: #313647
+    h2/h3: #222
+    Texto/Body: #e0e0e0
+     tarjeta bg: #ffff
+-Modo oscuro:
+   Body: #121212
+   Main: #1e1e1e
+   Tajeta:#2a2a2a
+   Boton:#333
+-Bordes y detalles:
+   Borde Avatar: #000507
+   Texto: #cccccc
+
+## JavaScript
+
+Funciones dinámicas en portada:
+
+-cargarComponente(id, archivo)
+Carga el header y footer desde archivos HTML externos (componentes/header.html y componentes/footer.html) usando fetch, e inyecta el contenido en el DOM. Evita repetir el mismo HTML en cada página. (ref 1) ![img/Capturas/Ref1 Ref2.png](<img/Capturas/Ref1 Ref2.png>)
+
+-generarTarjetas()
+Lee el array integrantes y crea dinámicamente las tarjetas de cada miembro con nombre, rol, foto y botón "Ver perfil". Cada tarjeta aparece con una animación escalonada de 200ms entre una y otra gracias al setTimeout. (ref 2)  ![alt text](<img/Capturas/Ref1 Ref2.png>)
+
+-toggleTarjetas() — Modo oscuro (ref 3) 
+Al hacer clic en el botón #btn-luz, alterna la clase modo-tarjetas en el body, cambia el texto del botón entre "🌙 Modo oscuro" y "☀️ Modo claro", y guarda la preferencia en localStorage para que persista al navegar entre páginas. ![alt text](img/Capturas/Ref3.png)
+
+
+Funciones dinámicas en páginas individuales:
+
+-Animación de entrada del perfil
+Al cargar la página, si existe un <main class="perfil">, se le agrega la clase visible con un delay de 100ms, disparando una transición CSS de opacity y translateY que hace que el contenido aparezca suavemente.
+
+- toggleContacto()  
+Al hacer clic en el botón #btn-contacto, muestra u oculta la sección #info-contacto alternando la clase activo, y cambia el texto del botón entre "Ver contacto" y "Ocultar contacto".
+
+- Restauración del modo oscuro
+Al cargar cualquier página, se lee localStorage para ver si el modo oscuro estaba activo, y si es así se aplica automáticamente sin que el usuario tenga que volver a activarlo.
